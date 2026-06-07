@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --base: #1e1e2e; --surface0: #313244; --text: #cdd6f4;
+            --rosewater: #f5e0dc; --lavender: #b4befe; --blue: #89b4fa;
+        }
+        body { background: var(--base); color: var(--text); font-family: 'JetBrainsMono Nerd Font', monospace; padding: 20px; }
+        .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .panel { border: 2px solid var(--surface0); padding: 15px; border-radius: 4px; }
+        h2 { color: var(--lavender); border-bottom: 1px solid var(--surface0); margin-top: 0; font-size: 1.2rem; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 5px 0; }
+        a { color: var(--text); text-decoration: none; }
+        a:hover { color: var(--blue); }
+        input { width: 90%; background: var(--surface0); border: 1px solid var(--rosewater); color: var(--text); padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel 1: Búsqueda -->
+        <div class="panel">
+            <h2>>_ SEARCH</h2>
+            <form action="https://duckduckgo.com/">
+                <input type="text" name="q" placeholder="root@search:~$ ">
+            </form>
+        </div>
+
+        <!-- Panel 2: Links Principales -->
+        <div class="panel">
+            <h2>>_ SYSTEM_LINKS</h2>
+            <ul>
+                <li>[01] <a href="https://github.com">GitHub</a></li>
+                <li>[02] <a href="https://archlinux.org">Arch Wiki</a></li>
+                <li>[03] <a href="https://reddit.com">Reddit</a></li>
+                <li>[04] <a href="https://youtube.com">YouTube</a></li>
+            </ul>
+        </div>
+
+        <!-- Panel 3: Status / Info -->
+        <div class="panel">
+            <h2>>_ HOST_INFO</h2>
+            <p>OS: Linux From Scratch<br>WM: Sway<br>Uptime: 04:20:00<br>Mem: 4.2GB / 16GB</p>
+        </div>
+
+        <!-- Panel 4: Favoritos extra -->
+        <div class="panel">
+            <h2>>_ DEV_TOOLS</h2>
+            <ul>
+                <li>[05] <a href="https://stackoverflow.com">StackOverflow</a></li>
+                <li>[06] <a href="https://fonts.google.com">Google Fonts</a></li>
+                <li>[07] <a href="https://godbolt.org">Compiler Explorer</a></li>
+            </ul>
+        </div>
+
+        <!-- Panel 5: Clima / Placeholder -->
+        <div class="panel">
+            <h2>>_ WEATHER</h2>
+            <p>Tijuana, MX: 22°C</p>
+        </div>
+
+        <!-- Panel 6: Proyectos -->
+        <div class="panel">
+            <h2>>_ PROJECTS</h2>
+            <ul>
+                <li>[08] <a href="https://github.com/Tolepi/valmieritty">Valmieritty</a></li>
+                <li>[09] <a href="https://github.com/Tolepi/valmier">Valmier (i3)</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
